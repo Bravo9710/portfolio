@@ -32,6 +32,7 @@ import {
   SiDocker,
 } from "react-icons/si";
 import LogosPreview from "../layout/LogosPreview";
+import CountUpBlock from "../blocks/CountUpBlock";
 
 export default function AboutSection() {
   const techLogos = [
@@ -158,18 +159,24 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 section">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-12">About</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <h3 className="text-2xl font-bold mb-6">Who am I?</h3>
-          <p>
-            Senior Front-end Developer with 4 years of experience building
-            scalable, high-performance web applications using React, Next.js,
-            and modern JavaScript ecosystems. Proven track record in CMS-driven
-            platforms, performance optimization, and UI architecture. Agile with
-            learning new technologies. Strong collaborator with different teams.
-            Delivering multilingual, user-friendly products with a focus on code
-            quality, maintainability, and business impact.
-          </p>
+        <div className="mb-12 grid grid-cols-2 gap-6">
+          <div>
+            <h2 className="text-4xl font-bold mb-8">About Me</h2>
+            <p>
+              Senior Front-end Developer with 4 years of experience building
+              scalable, high-performance web applications using React, Next.js,
+              and modern JavaScript ecosystems. Proven track record in
+              CMS-driven platforms, performance optimization, and UI
+              architecture. Agile with learning new technologies. Strong
+              collaborator with different teams. Delivering multilingual,
+              user-friendly products with a focus on code quality,
+              maintainability, and business impact.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-6">
+            <CountUpBlock count={50} plus text="pixel perfect projects" />
+            <CountUpBlock countFrom={1000} count={1423} plus text="bug fixes" />
+          </div>
         </div>
         <LogosPreview
           logos={techLogos}
