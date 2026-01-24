@@ -3,7 +3,7 @@ import AboutSection from "@/components/sections/AboutSection";
 
 export default function Home() {
   return (
-    <main className="flex mx-auto flex-col items-center gap-8">
+    <main className="flex mx-auto flex-col items-center gap-8 ">
       <IntroSection />
       <AboutSection />
     </main>
