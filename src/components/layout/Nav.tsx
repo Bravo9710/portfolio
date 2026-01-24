@@ -6,10 +6,10 @@ import { cn } from "@/lib";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const navItems = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Experience", href: "/experience" },
-  { label: "Education", href: "/education" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
 ];
 
 export default function Nav() {

@@ -4,7 +4,10 @@ import profilePic from "../../assets/profile-pictue@2x.png";
 
 export default function IntroSection() {
   return (
-    <section className="section w-full h-[calc(100vh-61px)]">
+    <section
+      id="home"
+      className="scroll-mt-16 section w-full h-[calc(100vh-83px)]"
+    >
       <div className="xl:container mx-auto h-full relative flex flex-col justify-center">
         <div className="light-rays w-full h-[600px] absolute top-0 left-0 bg-transparent">
           <LightRays
@@ -24,9 +27,14 @@ export default function IntroSection() {
           />
         </div>
         <div className="relative grid grid-cols-3 justify-between items-center mt-[70px]">
-          <h1 className="text-8xl w-[385px] bg-gradient-to-r from-gray-200 via-gray-300 to-gray-600 bg-clip-text text-transparent">
-            Ventsislav <br /> Venkov
-          </h1>
+          <div className="-mt-20">
+            <span className="text-3xl text-primary uppercase font-bold pb-3 block">
+              Hello I&apos;m
+            </span>
+            <h1 className="text-8xl w-[385px] bg-gradient-to-r from-gray-200 via-gray-300 to-gray-600 bg-clip-text text-transparent">
+              Ventsislav <br /> Venkov
+            </h1>
+          </div>
           <div className="relative flex justify-center ">
             <div className="relative z-10">
               <Image
@@ -43,9 +51,11 @@ export default function IntroSection() {
             <h2 className="role-subtitle">Front-end Dev</h2>
             <h3 className="role-title">Front-end Dev</h3>
           </div>
-          <p className="text-subtle max-w-fit flex-1 text-justify justify-self-end ">
-            &quot;Work as if you are working for yourself&quot;
-          </p>
+          <div className="-mt-20">
+            <p className="text-subtle max-w-fit flex-1 text-justify justify-self-end ">
+              &quot;Work as if you are working for yourself&quot;
+            </p>
+          </div>
         </div>
       </div>
     </section>
