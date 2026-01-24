@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState, useMemo, useCallback } from "react";
 import { Renderer, Program, Triangle, Mesh } from "ogl";
+import { cn } from "@/lib";
 
 export type RaysOrigin =
   | "top-center"
@@ -476,7 +477,11 @@ const LightRays: React.FC<LightRaysProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`w-full !bg-transparent h-full pointer-events-none z-[3] overflow-hidden relative transition-opacity duration-300 ${isReady ? "opacity-100" : "opacity-0"} ${className}`.trim()}
+      className={cn(
+        "w-full !bg-transparent h-full pointer-events-none z-[3] overflow-hidden relative transition-opacity duration-300",
+        isReady ? "opacity-100" : "opacity-0",
+        className,
+      )}
     />
   );
 };

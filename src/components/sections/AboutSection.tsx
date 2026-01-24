@@ -156,28 +156,20 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-20 section">
+    <section id="about" className="py-20 section">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-12">About</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-bold mb-6">Who am I?</h3>
-            <p>
-              I am a software developer with a passion for creating innovative
-              and user-friendly applications. I have experience working with a
-              variety of technologies and frameworks, and I am always looking
-              for new ways to improve my skills and knowledge.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold mb-6">What I do?</h3>
-            <p>
-              I specialize in building modern, responsive, and scalable web
-              applications using the latest technologies. I am particularly
-              skilled in React, Next.js, and TypeScript, and I enjoy creating
-              engaging and interactive user interfaces.
-            </p>
-          </div>
+          <h3 className="text-2xl font-bold mb-6">Who am I?</h3>
+          <p>
+            Senior Front-end Developer with 4 years of experience building
+            scalable, high-performance web applications using React, Next.js,
+            and modern JavaScript ecosystems. Proven track record in CMS-driven
+            platforms, performance optimization, and UI architecture. Agile with
+            learning new technologies. Strong collaborator with different teams.
+            Delivering multilingual, user-friendly products with a focus on code
+            quality, maintainability, and business impact.
+          </p>
         </div>
         <LogosPreview
           logos={techLogos}

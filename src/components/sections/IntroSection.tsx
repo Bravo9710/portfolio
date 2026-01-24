@@ -6,7 +6,7 @@ export default function IntroSection() {
   return (
     <section className="section w-full h-[calc(100vh-61px)]">
       <div className="xl:container mx-auto h-full relative flex flex-col justify-center">
-        <div className="w-full h-[600px] absolute top-0 left-0 bg-transparent">
+        <div className="light-rays w-full h-[600px] absolute top-0 left-0 bg-transparent">
           <LightRays
             raysOrigin="top-center"
             raysColor="#ffffff"
@@ -43,11 +43,8 @@ export default function IntroSection() {
             <h2 className="role-subtitle">Front-end Dev</h2>
             <h3 className="role-title">Front-end Dev</h3>
           </div>
-          <p className="text-subtle max-w-[300px] flex-1 text-justify justify-self-end ">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus vel
-            at tempore eligendi fugiat impedit alias quisquam quidem, officia
-            explicabo deleniti consectetur, officiis suscipit asperiores
-            numquam, sit repudiandae. Voluptate, expedita.
+          <p className="text-subtle max-w-fit flex-1 text-justify justify-self-end ">
+            &quot;Work as if you are working for yourself&quot;
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "#about" },
   { label: "Experience", href: "/experience" },
   { label: "Education", href: "/education" },
 ];
