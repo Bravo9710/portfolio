@@ -6,23 +6,23 @@ export default function IntroSection() {
   return (
     <section
       id="home"
-      className="scroll-mt-16 section w-full h-[calc(100vh-83px)]"
+      className="scroll-mt-16 section w-full relative  h-[calc(100vh-83px)] !overflow-visible"
     >
-      <div className="xl:container mx-auto h-full relative flex flex-col justify-center">
-        <div className="light-rays w-full h-[600px] absolute top-0 left-0 bg-transparent">
+      <div className="xl:container mx-auto h-full  flex flex-col justify-center">
+        <div className="light-rays w-full h-[calc(100vh-83px)] absolute top-0 left-0 bg-transparent !overflow-visible">
           <LightRays
             raysOrigin="top-center"
             raysColor="#ffffff"
             raysSpeed={0.5}
             lightSpread={0.4}
-            rayLength={0.8}
+            rayLength={0.6}
             followMouse={true}
             mouseInfluence={0.1}
             noiseAmount={0}
             distortion={0}
             className="custom-rays"
             pulsating={true}
-            fadeDistance={1}
+            fadeDistance={0.7}
             saturation={1}
           />
         </div>

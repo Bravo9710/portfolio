@@ -478,7 +478,7 @@ const LightRays: React.FC<LightRaysProps> = ({
     <div
       ref={containerRef}
       className={cn(
-        "w-full !bg-transparent h-full pointer-events-none z-[3] overflow-hidden relative transition-opacity duration-300",
+        "w-full !bg-transparent h-full pointer-events-none z-[3] relative transition-opacity duration-300",
         isReady ? "opacity-100" : "opacity-0",
         className,
       )}
