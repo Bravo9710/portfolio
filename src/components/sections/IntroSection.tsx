@@ -18,7 +18,7 @@ export default function IntroSection() {
             rayLength={0.8}
             followMouse={true}
             mouseInfluence={0.1}
-            noiseAmount={0.5}
+            noiseAmount={0}
             distortion={0}
             className="custom-rays"
             pulsating={true}
