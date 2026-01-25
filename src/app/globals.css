@@ -248,7 +248,7 @@
    CUSTOM STYLES
    ========================================================================== */
 .section {
-  @apply w-full px-4 md:px-5 overflow-hidden max-w-[1280px];
+  @apply w-full max-w-[1280px] overflow-hidden px-4 md:px-5;
 }
 
 .light-rays-container {

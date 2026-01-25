@@ -161,7 +161,7 @@ export default function AboutSection() {
       <div className="container mx-auto">
         <div className="mb-12 grid grid-cols-2 gap-6">
           <div>
-            <h2 className="text-4xl font-bold mb-8">About Me</h2>
+            <h3 className="mb-8">About Me</h3>
             <p>
               Senior Front-end Developer with 4 years of experience building
               scalable, high-performance web applications using React, Next.js,

@@ -4,11 +4,11 @@ export default function Logo() {
       {/* Animated background circles - BRING THE ENERGY */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div
-          className="absolute w-10 h-10 rounded-full border border-[#ff494a]/30 animate-ping"
+          className="absolute h-10 w-10 animate-ping rounded-full border border-[#ff494a]/30"
           style={{ animationDuration: "3s" }}
         ></div>
         <div
-          className="absolute w-12 h-12 rounded-full border border-[#ff494a]/20 animate-pulse"
+          className="absolute h-12 w-12 animate-pulse rounded-full border border-[#ff494a]/20"
           style={{ animationDuration: "2s" }}
         ></div>
       </div>
@@ -16,7 +16,7 @@ export default function Logo() {
       {/* Main Logo SVG */}
       <svg
         viewBox="0 0 240 100"
-        className="relative z-10 drop-shadow-2xl h-[50px] w-auto"
+        className="relative z-10 h-[50px] w-auto drop-shadow-2xl"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Background glow effect */}

@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
-        className="antialiased bg-background-dark pt-[83px]"
+        className="bg-background-dark pt-[83px] antialiased"
         suppressHydrationWarning
       >
         <Nav />

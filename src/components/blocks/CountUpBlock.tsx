@@ -37,16 +37,16 @@ export default function CountUpBlock({
   return (
     <div
       ref={containerRef}
-      className="group relative overflow-hidden rounded-[20px] bg-background-secondary p-[2px]"
+      className="group bg-background-secondary relative overflow-hidden rounded-[20px] p-[2px]"
     >
       <div
-        className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 top-[var(--y)] left-[var(--x)] w-[150%] h-[150%] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        className="pointer-events-none absolute top-[var(--y)] left-[var(--x)] h-[150%] w-[150%] -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         style={{
           background: "radial-gradient(circle, #FF494A, transparent 50%)",
         }}
       ></div>
-      <div className="relative z-10 flex flex-col items-center justify-center rounded-[18px] bg-background-secondary py-8 text-center w-full h-full">
-        <div className="text-5xl font-bold text-white mb-2 flex items-center gap-1">
+      <div className="bg-background-secondary relative z-10 flex h-full w-full flex-col items-center justify-center rounded-[18px] py-8 text-center">
+        <div className="mb-2 flex items-center gap-1 text-5xl font-bold text-white">
           <CountUp
             from={countFrom ?? 0}
             to={count}

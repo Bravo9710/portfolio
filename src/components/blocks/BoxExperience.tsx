@@ -16,7 +16,7 @@ export default function BoxExperience({
 }) {
   return (
     <Box>
-      <div className="md:px-7 px-4 py-7">
+      <div className="md:px-7 px-4 py-7 relative">
         <div className="flex max-md:flex-col max-md:text-center max-md:items-center justify-between items-start max-md:pb-3">
           <div>
             <h4 className="md:mb-1">{data.title}</h4>

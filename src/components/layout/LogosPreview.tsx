@@ -367,7 +367,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
                 isVertical
                   ? "mb-[var(--logoloop-gap)]"
                   : "mr-[var(--logoloop-gap)]",
-                scaleOnHover && "overflow-visible group/item",
+                scaleOnHover && "group/item overflow-visible",
               )}
               key={key}
               role="listitem"
@@ -400,10 +400,10 @@ export const LogoLoop = React.memo<LogoLoopProps>(
         const inner = item.href ? (
           <a
             className={cx(
-              "inline-flex items-center no-underline rounded",
+              "inline-flex items-center rounded no-underline",
               "transition-opacity duration-200 ease-linear",
               "hover:opacity-80",
-              "focus-visible:outline focus-visible:outline-current focus-visible:outline-offset-2",
+              "focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-current",
             )}
             href={item.href}
             aria-label={itemAriaLabel || "logo link"}
@@ -423,7 +423,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
               isVertical
                 ? "mb-[var(--logoloop-gap)]"
                 : "mr-[var(--logoloop-gap)]",
-              scaleOnHover && "overflow-visible group/item",
+              scaleOnHover && "group/item overflow-visible",
             )}
             key={key}
             role="listitem"
@@ -520,9 +520,9 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 
         <div
           className={cx(
-            "flex will-change-transform select-none relative z-0",
+            "relative z-0 flex will-change-transform select-none",
             "motion-reduce:transform-none",
-            isVertical ? "flex-col h-max w-full" : "flex-row w-max",
+            isVertical ? "h-max w-full flex-col" : "w-max flex-row",
           )}
           ref={trackRef}
           onMouseEnter={handleMouseEnter}

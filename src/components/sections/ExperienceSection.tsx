@@ -11,7 +11,7 @@ export default function ExperienceSection() {
       location: "Hybrid in Varna, Bulgaria",
       date: "May 2025 - Present",
       description: [
-        "  Develop and maintain a large-scale iGaming affiliate platform featuring multiple casino brands, games, and providers.",
+        "Develop and maintain a large-scale iGaming affiliate platform featuring multiple casino brands, games, and providers.",
         "Implement CMS pages and components using Sanity, enabling scalable content management.",
         "Delivered interactive UI components, data tables, and visualizations to improve user engagement.",
         "Integrated newsletter subscription functionality using Customer.io.",
@@ -81,11 +81,14 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="section">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-3 text-center">Experience</h2>
-        <p className="text-center mb-18">
-          Here is a list of the companies I have worked with in a timeline.
-          <br />I have worked with different technologies and tools, and I am
-          always looking for new challenges.
+        <p className="text-md text-secondary text-center uppercase">
+          Experience
+        </p>
+        <h2 className="mb-3 text-center">Gained experience over the years</h2>
+        <p className="mb-18 text-center">
+          Here is a list of the companies where I worked.
+          <br />I have used different technologies and tools, and I am always
+          looking for new challenges.
         </p>
         <ListBoxes>
           {experienceData.map((item, index) => (
