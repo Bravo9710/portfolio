@@ -51,11 +51,18 @@ export default function IntroSection() {
             <h2 className="role-subtitle">Front-end Dev</h2>
             <h3 className="role-title">Front-end Dev</h3>
           </div>
-          <div className="-mt-20 max-w-fit ml-auto">
+          <div className="-mt-20 max-w-[280px] ml-auto">
             <h3 className="text-2xl font-bold mb-6">Who am I?</h3>
-            <p className="text-subtle  flex-1 text-justify justify-self-end ">
-              &quot;Work as if you are working for yourself&quot;
-            </p>
+            <div className="flex flex-col gap-4 text-primary ">
+              <p>
+                A proactive Front-end Engineer who builds scalable applications
+                with an ownership mindset—treating every project as my own.
+              </p>
+
+              <p className="italic font-medium text-[#a1a1a1] border-l-2 border-secondary pl-4 py-1">
+                &quot;Work as if you are working for yourself&quot;
+              </p>
+            </div>
           </div>
         </div>
       </div>

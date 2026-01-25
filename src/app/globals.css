@@ -15,7 +15,7 @@
 
   --color-primary: #ffffff;
   --color-secondary: #ff494a;
-  --color-subtle: #cbcbcb;
+  --color-subtle: #a1a1a1;
 
   /* Primary colors */
   --color-primary-50: #eff6ff;
@@ -248,7 +248,7 @@
    CUSTOM STYLES
    ========================================================================== */
 .section {
-  @apply w-full px-5 overflow-hidden;
+  @apply w-full px-4 md:px-5 overflow-hidden max-w-[1280px];
 }
 
 .light-rays-container {

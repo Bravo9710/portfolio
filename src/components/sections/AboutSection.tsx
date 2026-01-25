@@ -157,7 +157,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 section">
+    <section id="about" className="section">
       <div className="container mx-auto">
         <div className="mb-12 grid grid-cols-2 gap-6">
           <div>
@@ -173,9 +173,21 @@ export default function AboutSection() {
               maintainability, and business impact.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-6">
-            <CountUpBlock count={50} plus text="pixel perfect projects" />
-            <CountUpBlock countFrom={1000} count={1423} plus text="bug fixes" />
+          <div className="grid grid-cols-2 grid-rows-2 gap-6">
+            <CountUpBlock count={50} plus text="Pixel perfect projects" />
+            <CountUpBlock countFrom={1234} count={1423} plus text="Bug fixes" />
+            <CountUpBlock
+              countFrom={400}
+              count={508}
+              plus
+              text="Contributions for half a year"
+            />
+            <CountUpBlock
+              countFrom={0}
+              count={4}
+              plus
+              text="Degrees & Certificates"
+            />
           </div>
         </div>
         <LogosPreview

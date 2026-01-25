@@ -1,18 +1,14 @@
 "use client";
 
+import { cn } from "@/lib";
 import { useRef, useEffect } from "react";
-import CountUp from "./CountUp";
 
-export default function CountUpBlock({
-  countFrom,
-  count,
-  plus = false,
-  text,
+export default function Box({
+  children,
+  className,
 }: {
-  countFrom?: number;
-  count: number;
-  plus?: boolean;
-  text: string;
+  children: React.ReactNode;
+  className?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -37,7 +33,10 @@ export default function CountUpBlock({
   return (
     <div
       ref={containerRef}
-      className="group relative overflow-hidden rounded-[20px] bg-background-secondary p-[2px]"
+      className={cn(
+        "group relative overflow-hidden  rounded-[20px] bg-background-tertiary p-[2px]",
+        className,
+      )}
     >
       <div
         className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 top-[var(--y)] left-[var(--x)] w-[150%] h-[150%] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -45,19 +44,8 @@ export default function CountUpBlock({
           background: "radial-gradient(circle, #FF494A, transparent 50%)",
         }}
       ></div>
-      <div className="relative z-10 flex flex-col items-center justify-center rounded-[18px] bg-background-secondary py-8 text-center w-full h-full">
-        <div className="text-5xl font-bold text-white mb-2 flex items-center gap-1">
-          <CountUp
-            from={countFrom ?? 0}
-            to={count}
-            separator=","
-            direction="up"
-            duration={2}
-            className="count-up-text"
-          />
-          {plus && <span>+</span>}
-        </div>
-        <p className="text-gray-400">{text}</p>
+      <div className="relative z-10 rounded-[18px] bg-background-tertiary ">
+        {children}
       </div>
     </div>
   );
