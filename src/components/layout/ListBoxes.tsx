@@ -4,7 +4,7 @@ export default function ListBoxes({
   children: React.ReactNode[];
 }) {
   return (
-    <div className="grid grid-cols-1">
+    <div className="grid grid-cols-1 mx-auto max-w-5xl">
       {children.map((child, index) => (
         <div
           key={index}
