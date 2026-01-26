@@ -16,11 +16,11 @@ export default function BoxExperience({
 }) {
   return (
     <Box>
-      <div className="md:px-7 px-4 py-7 relative">
-        <div className="flex max-md:flex-col max-md:text-center max-md:items-center justify-between items-start max-md:pb-3">
+      <div className="relative px-4 py-7 md:px-7">
+        <div className="flex items-start justify-between max-md:flex-col max-md:items-center max-md:pb-3 max-md:text-center">
           <div>
             <h4 className="md:mb-1">{data.title}</h4>
-            <p className="md:pb-3 pb-1 text-[16px]">
+            <p className="pb-1 text-[16px] md:pb-3">
               {data.company && (
                 <span className="text-secondary/80 pr-2">{data.company}</span>
               )}
@@ -31,7 +31,7 @@ export default function BoxExperience({
             </p>
             <p className="text-primary"></p>
           </div>
-          <p className="text-subtle text-sm flex items-center gap-2">
+          <p className="text-subtle flex items-center gap-2 text-sm">
             <RxCalendar /> {data.date}
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function BoxExperience({
         <ul>
           {data.description.map((item, index) => (
             <li
-              className="pl-3 md:pl-7 text-lg relative before:content-[''] before:absolute before:left-0 md:before:left-2.5 before:top-[10px] before:w-[6px] before:h-[6px] before:rounded-full before:bg-subtle"
+              className="text-primary/70 before:bg-subtle relative pl-3 text-lg before:absolute before:top-[10px] before:left-0 before:h-[6px] before:w-[6px] before:rounded-full before:content-[''] md:pl-7 md:before:left-2.5"
               key={index}
             >
               {item}
