@@ -157,9 +157,9 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="section">
+    <section id="about" className="section scroll-mt-20">
       <div className="container mx-auto">
-        <div className="mb-12 grid grid-cols-2 gap-6">
+        <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           <div>
             <h3 className="mb-8">About Me</h3>
             <p>
@@ -173,7 +173,7 @@ export default function AboutSection() {
               maintainability, and business impact.
             </p>
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 gap-6">
+          <div className="grid gap-5 sm:grid-cols-2 sm:grid-rows-2 md:gap-6">
             <CountUpBlock count={50} plus text="Pixel perfect projects" />
             <CountUpBlock countFrom={1234} count={1423} plus text="Bug fixes" />
             <CountUpBlock

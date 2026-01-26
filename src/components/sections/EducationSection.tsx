@@ -42,7 +42,7 @@ export default function EducationSection() {
   ];
 
   return (
-    <section id="education" className="section">
+    <section id="education" className="section scroll-mt-20">
       <div className="container mx-auto">
         <p className="text-md text-secondary text-center uppercase">
           Education

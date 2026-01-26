@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
+import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Ventsislav Venkov",
@@ -24,7 +25,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
-        {/* <Footer /> - add when created */}
+        <Footer />
       </body>
     </html>
   );

@@ -79,7 +79,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="section">
+    <section id="experience" className="section scroll-mt-20">
       <div className="container mx-auto">
         <p className="text-md text-secondary text-center uppercase">
           Experience

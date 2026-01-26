@@ -15,9 +15,9 @@ const navItems = [
 export default function Nav() {
   return (
     <header className="bg-background/80 border-border fixed top-0 left-0 z-50 w-full border-b px-4 py-4 backdrop-blur-sm">
-      <nav className="container mx-auto grid grid-cols-3 items-center">
+      <nav className="container mx-auto grid grid-cols-2 items-center sm:grid-cols-3">
         <Logo />
-        <ul className="flex items-center justify-center gap-6">
+        <ul className="flex items-center justify-center gap-6 max-sm:hidden">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
