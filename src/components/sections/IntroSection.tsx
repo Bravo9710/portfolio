@@ -1,6 +1,6 @@
-import LightRays from "../layout/LightRays";
 import Image from "next/image";
 import profilePic from "../../assets/profile-pictue@2x.png";
+import LightRays from "../layout/LightRays";
 
 export default function IntroSection() {
   return (
@@ -32,7 +32,7 @@ export default function IntroSection() {
               Hello I&apos;m
             </span>
             <h1 className="bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 bg-clip-text text-4xl text-transparent sm:text-6xl md:w-[385px] md:to-gray-600 lg:text-8xl">
-              Ventsislav <br className="hidden md:block" /> Venkov
+              Vencislav <br className="hidden md:block" /> Venkov
             </h1>
           </div>
           <div className="relative flex justify-center">
