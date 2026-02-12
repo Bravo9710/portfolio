@@ -22,11 +22,15 @@ export default function ExperienceSection() {
     },
 
     {
-      title: "Freelance Web Developer",
-      location: "Remote, Bulgaria",
+      title: "Career Development, Master’s Degree & Focus",
+      location: "Varna, Bulgaria / USA",
       date: "January 2024 - March 2025",
       description: [
-        "Development of personal projects linked with mobile applications and E-Commerce while I finish my master's degree.",
+        "Completed a Master’s degree in Mobile and Web Technologies at the University of Economics – Varna.",
+        "Built full-stack web applications using Node.js, MVC architecture, and Laravel.",
+        "Developed mobile applications with React Native and Kotlin.",
+        "Expanded knowledge in cybersecurity and modern software architecture.",
+        "Spent Summer 2024 working in the United States, strengthening professional communication skills and gaining international work experience.",
       ],
     },
 
@@ -57,6 +61,7 @@ export default function ExperienceSection() {
 
     {
       title: "Intern Front-end Developer",
+      company: "2Create",
       location: "Varna, Bulgaria",
       date: "January 2021",
       description: [
