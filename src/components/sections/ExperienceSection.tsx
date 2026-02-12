@@ -24,7 +24,7 @@ export default function ExperienceSection() {
     {
       title: "Career Development, Master’s Degree & Focus",
       location: "Varna, Bulgaria / USA",
-      date: "January 2024 - March 2025",
+      date: "October 2023 - January 2025",
       description: [
         "Completed a Master’s degree in Mobile and Web Technologies at the University of Economics – Varna.",
         "Built full-stack web applications using Node.js, MVC architecture, and Laravel.",
