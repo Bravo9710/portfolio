@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-border mx-auto py-8">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <h3 className="text-center">Let&apos;s work together</h3>
         <p className="pb-4 text-center text-sm">
           Have a offer or project in mind? Do not hesitate to reach out.

@@ -30,7 +30,8 @@ export default function ExperienceSection() {
         "Built full-stack web applications using Node.js, MVC architecture, and Laravel.",
         "Developed mobile applications with React Native and Kotlin.",
         "Expanded knowledge in cybersecurity and modern software architecture.",
-        "Spent Summer 2024 working in the United States, strengthening professional communication skills and gaining international work experience.",
+        "Spent Summer 2024 working in the United States strengthening professional communication skills.",
+        "Had the opportunity to gain international work experience and friendships in USA.",
       ],
     },
 
@@ -51,7 +52,7 @@ export default function ExperienceSection() {
       title: "Front-end Developer",
       company: "2Create",
       location: "Varna - Remote, Bulgaria",
-      date: "January 2021 — April 2022",
+      date: "February 2021 — April 2022",
       description: [
         "Created 50+ pixel-perfect, responsive websites from PSD, XD, and Figma designs.",
         "Worked with Webpack, SCSS, LESS, Bootstrap, and JavaScript modules.",
@@ -62,7 +63,7 @@ export default function ExperienceSection() {
     {
       title: "Intern Front-end Developer",
       company: "2Create",
-      location: "Varna, Bulgaria",
+      location: "Varna - Remote, Bulgaria",
       date: "January 2021",
       description: [
         "Gained hands-on experience in HTML, CSS, and JavaScript to create responsive and interactive web interfaces.",
